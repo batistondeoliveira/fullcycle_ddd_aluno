@@ -34,7 +34,7 @@ describe("Customer unit tests", () => {
     // Arrange
     const customer = new Customer("123", "John");
     const address = new Address("Street 1", 123, "13330-250", "São Paulo");
-    customer.Address = address;
+    customer.changeAddress(address);
 
     // Act
     customer.activate();
